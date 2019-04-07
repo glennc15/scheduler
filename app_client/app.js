@@ -19,6 +19,11 @@
         controller: 'locationDetailCtrl',
         controllerAs: 'vm'
       })
+      .when('/admin', {
+        templateUrl: '/admin/projects.view.html',
+        controller: 'projectsCtrl',
+        controllerAs: 'vm'
+      })
       .otherwise({redirectTo: '/'});
 
     // use the HTML5 History API
