@@ -8,6 +8,10 @@
   function projectsCtrl ($routeParams, $modal, loc8rData) {
     var vm = this;
 
+    vm.pageHeader = {
+      title: "Projects Admin"
+    };
+
     // vm.locationid = $routeParams.locationid;
 
     // loc8rData.locationById(vm.locationid)
