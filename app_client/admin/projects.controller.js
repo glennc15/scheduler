@@ -12,6 +12,18 @@
       title: "Projects Admin"
     };
 
+    vm.projects = [{
+      id: 9,
+      name: "BFELS: M883 Urca",
+      country_code: "BR"
+    },
+    {
+      id: 55,
+      name: "BFELS: M962 Frade",
+      country_code: "BR"
+    }];
+
+
     // vm.locationid = $routeParams.locationid;
 
     // loc8rData.locationById(vm.locationid)
