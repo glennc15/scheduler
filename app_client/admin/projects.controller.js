@@ -24,6 +24,13 @@
     }];
 
 
+    vm.delete_project = function(project_id) {
+      alert("delete_project(" + project_id + ") has been pressed!");
+    };
+
+    vm.get_projects = function () {
+      alert("Getting Projects from RCM");
+    }
     // vm.locationid = $routeParams.locationid;
 
     // loc8rData.locationById(vm.locationid)

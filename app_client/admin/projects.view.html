@@ -4,6 +4,32 @@
   <page-header content="vm.pageHeader"></page-header>
 
   <p>{{ vm.projects }}</p>
+
+  <!-- start: Projects table -->
+  <div class="row">
+    <div class="col-xs-12 col-md-12">
+      <table class="table">
+        <tbody>
+          <tr ng-repeat="project in vm.projects">
+            <td>
+              {{ project.name}} <a ng-click="vm.delete_project(project.id)" class="btn btn-danger pull-right">Delete</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <!-- end: Projects table -->
+  
+  <!-- start: update projects section -->
+  <div class="row">
+    <div class="col-xs-12 col-md-12">
+      <a ng-click="vm.get_projects()" class="btn btn-default">Get RCM Projects</a>
+    </div>
+  </div>
+  <!-- end: update projects section -->
+
+
 <!--   <div class="row">
     <div class="col-xs-12 col-md-9">
       <div class="row">
