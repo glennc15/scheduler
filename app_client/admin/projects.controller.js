@@ -4,8 +4,11 @@
     .module('loc8rApp')
     .controller('projectsCtrl', projectsCtrl);
 
-  projectsCtrl.$inject = ['$routeParams', '$modal', 'loc8rData'];
-  function projectsCtrl ($routeParams, $modal, loc8rData) {
+  projectsCtrl.$inject = ['$routeParams', '$modal', 'rcmData'];
+  function projectsCtrl ($routeParams, $modal, rcmData) {
+  // projectsCtrl.$inject = ['$routeParams', '$modal'];
+  // function projectsCtrl ($routeParams, $modal) {
+
     var vm = this;
 
     vm.pageHeader = {
@@ -31,6 +34,16 @@
     vm.get_projects = function () {
       alert("Getting Projects from RCM");
     }
+
+    rcmData.rcm_projects()
+      .success(function(data) {
+        console.log(data);
+      })
+      .error(function (e) {
+        console.log(e);
+      });
+
+    
     // vm.locationid = $routeParams.locationid;
 
     // loc8rData.locationById(vm.locationid)

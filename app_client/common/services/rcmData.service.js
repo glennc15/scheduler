@@ -6,8 +6,13 @@
 
   rcmData.$inject = ['$http'];
   function rcmData ($http) {
+    
     var rcm_projects = function() {
-      return http.get('http://rcm.nov.com', { withCredentials: true });
+      return $http.get('http://rcm.nov.com', { withCredentials: true });
+    };
+
+    return {
+      rcm_projects: rcm_projects
     };
 
     // var locationByCoords = function (lat, lng) {
@@ -28,10 +33,8 @@
     //   addReviewById : addReviewById
     // };
 
-    return {
-      rcm_projects: rcm_projects
-    };
-    
+
+
   }
 
 })();
