@@ -35,13 +35,13 @@
       alert("Getting Projects from RCM");
     }
 
-    rcmData.rcm_projects()
-      .success(function(data) {
-        console.log(data);
-      })
-      .error(function (e) {
-        console.log(e);
-      });
+    // rcmData.rcm_projects()
+    //   .success(function(data) {
+    //     console.log(data);
+    //   })
+    //   .error(function (e) {
+    //     console.log(e);
+    //   });
 
     
     // vm.locationid = $routeParams.locationid;
