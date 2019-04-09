@@ -8,7 +8,10 @@
   function rcmData ($http) {
     
     var rcm_projects = function() {
-      return $http.get('http://rcm.nov.com', { withCredentials: true });
+
+      var rcm_projects_url = "https://rcm.nov.com/ProjectData/AvailableProjectsForProjectGrid_FST?_search=false&nd=1554818789878&rows=10000&page=1&sidx=IcProjectId&sord=asc";
+      
+      return $http.get(rcm_projects_url, { withCredentials: true });
     };
 
     return {

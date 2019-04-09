@@ -1,0 +1,44 @@
+{
+    "Page": 1,
+    "Records": 1,
+    "Total": -1,
+    "Rows": [
+        {
+            "Id": 2836493,
+            "CreatedDate": "2019-03-14T15:16:49.1226106",
+            "UpdatedDate": "2019-03-18T16:49:00.9557182",
+            "DailyReportId": 887491,
+            "ChargeType": "Contract",
+            "DailyReportShift": "Day",
+            "EquipmentId": null,
+            "Hours": 10,
+            "Description": "Travel from BKK, Thailand to Rio de Janeiro, Brazil.",
+            "ChargeTypeId": 2,
+            "CustomerChargeReason": null,
+            "ChargeCodeId": null,
+            "ShiftId": 1,
+            "ActivityDate": "2019-03-12T00:00:00",
+            "ContactName": "Crosby, Glenn M (Glenn)",
+            "EquipmentName": "",
+            "ProjectPhaseId": 1,
+            "ProjectPhase": "Installation",
+            "RigEventCaseNumberId": null,
+            "ReworkCodeId": null,
+            "ReworkCode": "",
+            "ContractCodeId": null,
+            "ContractCode": "",
+            "AdminCodeId": 13,
+            "AdminCode": "Personnel Travel & Logistics",
+            "AdminCodeOrEquipment": "Personnel Travel & Logistics",
+            "QualitySystemReference": null,
+            "ProjectAssignmentHours": [
+                10
+            ],
+            "HoursForColor": 10,
+            "ProjectEquipmentSubEquipmentId": null,
+            "SubEquipment": "",
+            "SubEquipmentSerialNumber": "",
+            "SubEquipmentModelNumber": ""
+        }
+    ]
+}

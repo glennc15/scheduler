@@ -1,0 +1,482 @@
+{
+    "Page": 1,
+    "Records": 25,
+    "Total": 1,
+    "Rows": [
+        {
+            "Id": 887490,
+            "ActivityDate": "2019-03-11T00:00:00",
+            "SubmittedDate": "2019-03-18T00:00:00",
+            "PersonId": 33,
+            "ContactName": "Crosby, Glenn M (Glenn)",
+            "CreatedDate": "2019-03-14T15:15:32.216255",
+            "RejectedDate": null,
+            "DailyReportNumber": "DR-BRS09588-9",
+            "SequenceId": 9,
+            "DisciplineName": [
+                "Electrical"
+            ],
+            "Status": "Approved",
+            "Hours": 10,
+            "ProjectAssignmentHours": [
+                10
+            ]
+        },
+        {
+            "Id": 887491,
+            "ActivityDate": "2019-03-12T00:00:00",
+            "SubmittedDate": "2019-03-18T00:00:00",
+            "PersonId": 33,
+            "ContactName": "Crosby, Glenn M (Glenn)",
+            "CreatedDate": "2019-03-14T15:16:34.7475802",
+            "RejectedDate": null,
+            "DailyReportNumber": "DR-BRS09588-10",
+            "SequenceId": 10,
+            "DisciplineName": [
+                "Electrical"
+            ],
+            "Status": "Approved",
+            "Hours": 10,
+            "ProjectAssignmentHours": [
+                10
+            ]
+        },
+        {
+            "Id": 887493,
+            "ActivityDate": "2019-03-13T00:00:00",
+            "SubmittedDate": "2019-04-03T00:00:00",
+            "PersonId": 33,
+            "ContactName": "Crosby, Glenn M (Glenn)",
+            "CreatedDate": "2019-03-14T15:17:02.9976511",
+            "RejectedDate": null,
+            "DailyReportNumber": "DR-BRS09588-12",
+            "SequenceId": 12,
+            "DisciplineName": [
+                "Electrical"
+            ],
+            "Status": "Approved",
+            "Hours": 10,
+            "ProjectAssignmentHours": [
+                10
+            ]
+        },
+        {
+            "Id": 887686,
+            "ActivityDate": "2019-03-14T00:00:00",
+            "SubmittedDate": "2019-04-03T00:00:00",
+            "PersonId": 33,
+            "ContactName": "Crosby, Glenn M (Glenn)",
+            "CreatedDate": "2019-03-15T06:52:16.829593",
+            "RejectedDate": null,
+            "DailyReportNumber": "DR-BRS09588-17",
+            "SequenceId": 17,
+            "DisciplineName": [
+                "Electrical"
+            ],
+            "Status": "Approved",
+            "Hours": 10,
+            "ProjectAssignmentHours": [
+                10
+            ]
+        },
+        {
+            "Id": 887690,
+            "ActivityDate": "2019-03-15T00:00:00",
+            "SubmittedDate": "2019-04-03T00:00:00",
+            "PersonId": 33,
+            "ContactName": "Crosby, Glenn M (Glenn)",
+            "CreatedDate": "2019-03-15T12:25:15.0718015",
+            "RejectedDate": null,
+            "DailyReportNumber": "DR-BRS09588-20",
+            "SequenceId": 20,
+            "DisciplineName": [
+                "Electrical"
+            ],
+            "Status": "Approved",
+            "Hours": 10,
+            "ProjectAssignmentHours": [
+                10
+            ]
+        },
+        {
+            "Id": 887808,
+            "ActivityDate": "2019-03-17T00:00:00",
+            "SubmittedDate": "2019-03-18T00:00:00",
+            "PersonId": 33,
+            "ContactName": "Crosby, Glenn M (Glenn)",
+            "CreatedDate": "2019-03-16T13:55:12.6068605",
+            "RejectedDate": "2019-03-18T00:00:00",
+            "DailyReportNumber": "DR-BRS09588-34",
+            "SequenceId": 34,
+            "DisciplineName": [
+                "Electrical"
+            ],
+            "Status": "Approved",
+            "Hours": 10,
+            "ProjectAssignmentHours": [
+                10
+            ]
+        },
+        {
+            "Id": 888033,
+            "ActivityDate": "2019-03-18T00:00:00",
+            "SubmittedDate": "2019-03-18T00:00:00",
+            "PersonId": 33,
+            "ContactName": "Crosby, Glenn M (Glenn)",
+            "CreatedDate": "2019-03-18T14:56:56.2081451",
+            "RejectedDate": null,
+            "DailyReportNumber": "DR-BRS09588-35",
+            "SequenceId": 35,
+            "DisciplineName": [
+                "Electrical"
+            ],
+            "Status": "Approved",
+            "Hours": 10,
+            "ProjectAssignmentHours": [
+                10
+            ]
+        },
+        {
+            "Id": 888190,
+            "ActivityDate": "2019-03-19T00:00:00",
+            "SubmittedDate": "2019-03-19T00:00:00",
+            "PersonId": 33,
+            "ContactName": "Crosby, Glenn M (Glenn)",
+            "CreatedDate": "2019-03-19T15:01:30.1609477",
+            "RejectedDate": null,
+            "DailyReportNumber": "DR-BRS09588-43",
+            "SequenceId": 43,
+            "DisciplineName": [
+                "Electrical"
+            ],
+            "Status": "Approved",
+            "Hours": 10,
+            "ProjectAssignmentHours": [
+                10
+            ]
+        },
+        {
+            "Id": 888384,
+            "ActivityDate": "2019-03-20T00:00:00",
+            "SubmittedDate": "2019-03-23T00:00:00",
+            "PersonId": 33,
+            "ContactName": "Crosby, Glenn M (Glenn)",
+            "CreatedDate": "2019-03-20T14:22:32.3500399",
+            "RejectedDate": null,
+            "DailyReportNumber": "DR-BRS09588-47",
+            "SequenceId": 47,
+            "DisciplineName": [
+                "Electrical"
+            ],
+            "Status": "Approved",
+            "Hours": 10,
+            "ProjectAssignmentHours": [
+                10
+            ]
+        },
+        {
+            "Id": 888712,
+            "ActivityDate": "2019-03-22T00:00:00",
+            "SubmittedDate": "2019-03-22T00:00:00",
+            "PersonId": 33,
+            "ContactName": "Crosby, Glenn M (Glenn)",
+            "CreatedDate": "2019-03-22T14:39:17.3889414",
+            "RejectedDate": null,
+            "DailyReportNumber": "DR-BRS09588-59",
+            "SequenceId": 59,
+            "DisciplineName": [
+                "Electrical"
+            ],
+            "Status": "Approved",
+            "Hours": 10,
+            "ProjectAssignmentHours": [
+                10
+            ]
+        },
+        {
+            "Id": 888820,
+            "ActivityDate": "2019-03-24T00:00:00",
+            "SubmittedDate": "2019-03-23T00:00:00",
+            "PersonId": 33,
+            "ContactName": "Crosby, Glenn M (Glenn)",
+            "CreatedDate": "2019-03-23T11:45:30.9374855",
+            "RejectedDate": null,
+            "DailyReportNumber": "DR-BRS09588-62",
+            "SequenceId": 62,
+            "DisciplineName": [
+                "Electrical"
+            ],
+            "Status": "Approved",
+            "Hours": 10,
+            "ProjectAssignmentHours": [
+                10
+            ]
+        },
+        {
+            "Id": 888821,
+            "ActivityDate": "2019-03-23T00:00:00",
+            "SubmittedDate": "2019-03-23T00:00:00",
+            "PersonId": 33,
+            "ContactName": "Crosby, Glenn M (Glenn)",
+            "CreatedDate": "2019-03-23T11:48:20.9389555",
+            "RejectedDate": null,
+            "DailyReportNumber": "DR-BRS09588-63",
+            "SequenceId": 63,
+            "DisciplineName": [
+                "Electrical"
+            ],
+            "Status": "Approved",
+            "Hours": 10,
+            "ProjectAssignmentHours": [
+                10
+            ]
+        },
+        {
+            "Id": 891216,
+            "ActivityDate": "2019-03-25T00:00:00",
+            "SubmittedDate": "2019-03-26T00:00:00",
+            "PersonId": 33,
+            "ContactName": "Crosby, Glenn M (Glenn)",
+            "CreatedDate": "2019-03-26T14:21:59.0006459",
+            "RejectedDate": null,
+            "DailyReportNumber": "DR-BRS09588-80",
+            "SequenceId": 80,
+            "DisciplineName": [
+                "Electrical"
+            ],
+            "Status": "Approved",
+            "Hours": 10,
+            "ProjectAssignmentHours": [
+                10
+            ]
+        },
+        {
+            "Id": 891221,
+            "ActivityDate": "2019-03-26T00:00:00",
+            "SubmittedDate": "2019-03-26T00:00:00",
+            "PersonId": 33,
+            "ContactName": "Crosby, Glenn M (Glenn)",
+            "CreatedDate": "2019-03-26T14:26:50.3487527",
+            "RejectedDate": null,
+            "DailyReportNumber": "DR-BRS09588-85",
+            "SequenceId": 85,
+            "DisciplineName": [
+                "Electrical"
+            ],
+            "Status": "Approved",
+            "Hours": 10,
+            "ProjectAssignmentHours": [
+                10
+            ]
+        },
+        {
+            "Id": 891541,
+            "ActivityDate": "2019-03-27T00:00:00",
+            "SubmittedDate": "2019-04-03T00:00:00",
+            "PersonId": 33,
+            "ContactName": "Crosby, Glenn M (Glenn)",
+            "CreatedDate": "2019-03-28T05:16:22.1064895",
+            "RejectedDate": null,
+            "DailyReportNumber": "DR-BRS09588-94",
+            "SequenceId": 94,
+            "DisciplineName": [
+                "Electrical"
+            ],
+            "Status": "Approved",
+            "Hours": 10,
+            "ProjectAssignmentHours": [
+                10
+            ]
+        },
+        {
+            "Id": 891587,
+            "ActivityDate": "2019-03-28T00:00:00",
+            "SubmittedDate": "2019-03-28T00:00:00",
+            "PersonId": 33,
+            "ContactName": "Crosby, Glenn M (Glenn)",
+            "CreatedDate": "2019-03-28T14:50:43.0542946",
+            "RejectedDate": null,
+            "DailyReportNumber": "DR-BRS09588-119",
+            "SequenceId": 119,
+            "DisciplineName": [
+                "Electrical"
+            ],
+            "Status": "Approved",
+            "Hours": 10,
+            "ProjectAssignmentHours": [
+                10
+            ]
+        },
+        {
+            "Id": 891742,
+            "ActivityDate": "2019-03-29T00:00:00",
+            "SubmittedDate": "2019-03-29T00:00:00",
+            "PersonId": 33,
+            "ContactName": "Crosby, Glenn M (Glenn)",
+            "CreatedDate": "2019-03-29T13:36:01.7184646",
+            "RejectedDate": null,
+            "DailyReportNumber": "DR-BRS09588-127",
+            "SequenceId": 127,
+            "DisciplineName": [
+                "Electrical"
+            ],
+            "Status": "Approved",
+            "Hours": 10,
+            "ProjectAssignmentHours": [
+                10
+            ]
+        },
+        {
+            "Id": 891900,
+            "ActivityDate": "2019-03-30T00:00:00",
+            "SubmittedDate": "2019-03-30T00:00:00",
+            "PersonId": 33,
+            "ContactName": "Crosby, Glenn M (Glenn)",
+            "CreatedDate": "2019-03-30T13:00:00.1910291",
+            "RejectedDate": null,
+            "DailyReportNumber": "DR-BRS09588-142",
+            "SequenceId": 142,
+            "DisciplineName": [
+                "Electrical"
+            ],
+            "Status": "Approved",
+            "Hours": 5.5,
+            "ProjectAssignmentHours": [
+                10
+            ]
+        },
+        {
+            "Id": 891902,
+            "ActivityDate": "2019-03-31T00:00:00",
+            "SubmittedDate": "2019-03-30T00:00:00",
+            "PersonId": 33,
+            "ContactName": "Crosby, Glenn M (Glenn)",
+            "CreatedDate": "2019-03-30T13:04:53.5825784",
+            "RejectedDate": null,
+            "DailyReportNumber": "DR-BRS09588-144",
+            "SequenceId": 144,
+            "DisciplineName": [
+                "Electrical"
+            ],
+            "Status": "Approved",
+            "Hours": 10,
+            "ProjectAssignmentHours": [
+                10
+            ]
+        },
+        {
+            "Id": 892167,
+            "ActivityDate": "2019-04-01T00:00:00",
+            "SubmittedDate": "2019-04-01T00:00:00",
+            "PersonId": 33,
+            "ContactName": "Crosby, Glenn M (Glenn)",
+            "CreatedDate": "2019-04-01T14:27:19.7691803",
+            "RejectedDate": null,
+            "DailyReportNumber": "DR-BRS09588-160",
+            "SequenceId": 160,
+            "DisciplineName": [
+                "Electrical"
+            ],
+            "Status": "Approved",
+            "Hours": 10,
+            "ProjectAssignmentHours": [
+                10
+            ]
+        },
+        {
+            "Id": 892330,
+            "ActivityDate": "2019-04-02T00:00:00",
+            "SubmittedDate": "2019-04-02T00:00:00",
+            "PersonId": 33,
+            "ContactName": "Crosby, Glenn M (Glenn)",
+            "CreatedDate": "2019-04-02T14:41:59.2785359",
+            "RejectedDate": null,
+            "DailyReportNumber": "DR-BRS09588-170",
+            "SequenceId": 170,
+            "DisciplineName": [
+                "Electrical"
+            ],
+            "Status": "Approved",
+            "Hours": 10,
+            "ProjectAssignmentHours": [
+                10
+            ]
+        },
+        {
+            "Id": 892486,
+            "ActivityDate": "2019-04-03T00:00:00",
+            "SubmittedDate": "2019-04-03T00:00:00",
+            "PersonId": 33,
+            "ContactName": "Crosby, Glenn M (Glenn)",
+            "CreatedDate": "2019-04-03T15:00:05.9316264",
+            "RejectedDate": null,
+            "DailyReportNumber": "DR-BRS09588-182",
+            "SequenceId": 182,
+            "DisciplineName": [
+                "Electrical"
+            ],
+            "Status": "Approved",
+            "Hours": 10,
+            "ProjectAssignmentHours": [
+                10
+            ]
+        },
+        {
+            "Id": 892671,
+            "ActivityDate": "2019-04-04T00:00:00",
+            "SubmittedDate": "2019-04-04T00:00:00",
+            "PersonId": 33,
+            "ContactName": "Crosby, Glenn M (Glenn)",
+            "CreatedDate": "2019-04-04T15:02:31.0768632",
+            "RejectedDate": null,
+            "DailyReportNumber": "DR-BRS09588-195",
+            "SequenceId": 195,
+            "DisciplineName": [
+                "Electrical"
+            ],
+            "Status": "Approved",
+            "Hours": 10,
+            "ProjectAssignmentHours": [
+                10
+            ]
+        },
+        {
+            "Id": 892829,
+            "ActivityDate": "2019-04-05T00:00:00",
+            "SubmittedDate": "2019-04-05T00:00:00",
+            "PersonId": 33,
+            "ContactName": "Crosby, Glenn M (Glenn)",
+            "CreatedDate": "2019-04-05T13:17:50.1147065",
+            "RejectedDate": null,
+            "DailyReportNumber": "DR-BRS09588-202",
+            "SequenceId": 202,
+            "DisciplineName": [
+                "Electrical"
+            ],
+            "Status": "Approved",
+            "Hours": 10,
+            "ProjectAssignmentHours": [
+                10
+            ]
+        },
+        {
+            "Id": 892948,
+            "ActivityDate": "2019-04-06T00:00:00",
+            "SubmittedDate": "2019-04-06T00:00:00",
+            "PersonId": 33,
+            "ContactName": "Crosby, Glenn M (Glenn)",
+            "CreatedDate": "2019-04-06T10:34:47.4145466",
+            "RejectedDate": null,
+            "DailyReportNumber": "DR-BRS09588-210",
+            "SequenceId": 210,
+            "DisciplineName": [
+                "Electrical"
+            ],
+            "Status": "Approved",
+            "Hours": 10,
+            "ProjectAssignmentHours": [
+                10
+            ]
+        }
+    ]
+}
