@@ -20,6 +20,8 @@ router.delete('/locations/:locationid/reviews/:reviewid', ctrlReviews.reviewsDel
 // projects:
 router.get('/projects', ctrlProjects.projectsReadAll);
 router.post('/projects', ctrlProjects.projectsCreate);
+router.put('/projects/setActiveProject/:projectid', ctrlProjects.projectSetActiveProject);
+router.put('/projects/deselectAllProject', ctrlProjects.deselectAllProject);
 // router.get('/projects/:projectid', ctrlProjects.projectsReadOne);
 // router.put('/projects/:projectid', ctrlProjects.projectsUpdateOne);
 // router.delete('/projects/:projectid', ctrlProjects.projectsDeleteOne);

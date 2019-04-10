@@ -4,7 +4,8 @@ var projectSchema = new mongoose.Schema(
 	{
 		rcmProjectId: {type: Number, required: true},
 		name: String,
-		shipyardName: String
+		shipyardName: String,
+		projectSelected: {type: Boolean, default: false}
 	}
 );
 

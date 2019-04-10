@@ -29,7 +29,8 @@ module.exports.projectsCreate = function(req, res) {
     .create({
       rcmProjectId: req.body.rcmProjectId,
       name: req.body.name,
-      shipyardName: req.body.shipyardName
+      shipyardName: req.body.shipyardName,
+      projectSelected: false
       }, function(err, project) {
         if (err) {
           sendJSONresponse(res, 400, err);
@@ -40,6 +41,58 @@ module.exports.projectsCreate = function(req, res) {
 };
 
 
+/* PUT /projects/setActiveProject/:projectid */
+/* set the active project */
+module.exports.projectSetActiveProject = function(req, res) {
+  if (!req.params.projectid) {
+    sendJSONresponse(res, 404, {
+      "message": "Not found, projectid is required"
+    });
+    return;
+  }
+
+  Project
+    .findOne({rcmProjectId: req.params.projectid})
+    .exec(
+      function(err, project) {
+        if (!project) {
+          sendJSONresponse(res, 404, {
+            "message": "projectid not found"
+          });
+          return;
+        } else if (err) {
+          sendJSONresponse(res, 400, err);
+          return;
+        }
+
+        project.projectSelected = true;
+        project.save(function(err, project) {
+          if (err) {
+            sendJSONresponse(res, 404, err);
+          } else {
+            sendJSONresponse(res, 200, project);
+          }
+        });
+      }
+  );
+};
+
+// router.put('/projects/deselectAllProject/:projectid', ctrlProjects.deselectAllProject);
+
+/* set the active project */
+module.exports.deselectAllProject = function(req, res) {
+  Project
+    .updateMany({}, {projectSelected: false})
+    .exec(
+      function(err, project) {
+        if (err) {
+          sendJSONresponse(res, 400, err);
+          return;
+        } else {
+          sendJSONresponse(res, 200, project);
+        }
+      });
+};
 
 // /* GET a location by the id */
 // module.exports.locationsReadOne = function(req, res) {
