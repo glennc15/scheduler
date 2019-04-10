@@ -1,7 +1,7 @@
 var mongoose = require('mongoose');
 var gracefulShutdown;
-var dbURI = 'mongodb://localhost/Scheduler';
-// var dbURI = 'mongodb+srv://scheduler_user:admin@cluster0-otsgz.mongodb.net/test?retryWrites=true';
+// var dbURI = 'mongodb://localhost/Scheduler';
+var dbURI = 'mongodb+srv://scheduler_user:admin@cluster0-otsgz.mongodb.net/test?retryWrites=true';
 
 if (process.env.NODE_ENV === 'production') {
     dbURI = process.env.MONGOLAB_URI;
