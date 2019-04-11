@@ -22,9 +22,9 @@ router.get('/projects', ctrlProjects.projectsReadAll);
 router.post('/projects', ctrlProjects.projectsCreate);
 router.put('/projects/setActiveProject/:projectid', ctrlProjects.projectSetActiveProject);
 router.put('/projects/deselectAllProject', ctrlProjects.deselectAllProject);
-// router.get('/projects/:projectid', ctrlProjects.projectsReadOne);
+router.get('/projects/:projectid', ctrlProjects.projectsReadOne);
 // router.put('/projects/:projectid', ctrlProjects.projectsUpdateOne);
-// router.delete('/projects/:projectid', ctrlProjects.projectsDeleteOne);
+router.delete('/projects/:projectid', ctrlProjects.projectsDeleteOne);
 
 
 module.exports = router;
