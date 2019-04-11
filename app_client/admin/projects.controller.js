@@ -4,44 +4,58 @@
     .module('loc8rApp')
     .controller('projectsCtrl', projectsCtrl);
 
-  projectsCtrl.$inject = ['$routeParams', '$modal', 'rcmData'];
-  function projectsCtrl ($routeParams, $modal, rcmData) {
-  // projectsCtrl.$inject = ['$routeParams', '$modal'];
-  // function projectsCtrl ($routeParams, $modal) {
+  projectsCtrl.$inject = ['$routeParams', '$modal', 'projectsData'];
+  function projectsCtrl ($routeParams, $modal, projectsData) {
 
     var vm = this;
+
+    var getProjectData = function(){
+      projectsData.readAllProjects()
+        .success(function(projectsData) {
+          vm.projects = projectsData;
+        })
+        .error(function (e) {
+          console.log(e);
+        });
+    };
 
     vm.pageHeader = {
       title: "Projects Admin"
     };
 
-    vm.projects = [{
-      id: 9,
-      name: "BFELS: M883 Urca",
-      country_code: "BR"
-    },
-    {
-      id: 55,
-      name: "BFELS: M962 Frade",
-      country_code: "BR"
-    }];
+    getProjectData();
+
+    // vm.projects = [{
+    //   id: 9,
+    //   name: "BFELS: M883 Urca",
+    //   country_code: "BR"
+    // },
+    // {
+    //   id: 55,
+    //   name: "BFELS: M962 Frade",
+    //   country_code: "BR"
+    // }];
 
 
-    vm.delete_project = function(project_id) {
-      alert("delete_project(" + project_id + ") has been pressed!");
+    vm.delete_project = function(projectId) {
+
+      // alert("delete_project(" + project_id + ") has been pressed!");
+      projectsData.deleteProject(projectId)
+        .success(function(statusCode){
+          console.log(statusCode);
+            getProjectData();
+        })
+        .error(function(e) {
+          console.log(e);
+        });
+
     };
 
     vm.get_projects = function () {
       alert("Getting Projects from RCM");
     }
 
-    rcmData.rcm_projects()
-      .success(function(data) {
-        console.log(data);
-      })
-      .error(function (e) {
-        console.log(e);
-      });
+
 
     
     // vm.locationid = $routeParams.locationid;

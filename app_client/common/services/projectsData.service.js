@@ -2,20 +2,22 @@
 
   angular
     .module('loc8rApp')
-    .service('rcmData', rcmData);
+    .service('projectsData', projectsData);
 
-  rcmData.$inject = ['$http'];
-  function rcmData ($http) {
+  projectsData.$inject = ['$http'];
+  function projectsData ($http) {
     
-    var rcm_projects = function() {
+    var readAllProjects = function() {
+      return $http.get('/api/projects');
+    };
 
-      // var rcm_projects_url = "https://rcm.nov.com/ProjectData/AvailableProjectsForProjectGrid_FST?_search=false&nd=1554818789878&rows=10000&page=1&sidx=IcProjectId&sord=asc";
-      // 
-      // return $http.get(rcm_projects_url, { withCredentials: true });
+    var deleteProject = function(projectId) {
+      return $http.delete('/api/projects/' + projectId);
     };
 
     return {
-      rcm_projects: rcm_projects
+      readAllProjects: readAllProjects,
+      deleteProject: deleteProject
     };
 
     // var locationByCoords = function (lat, lng) {

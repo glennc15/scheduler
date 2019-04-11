@@ -161,7 +161,7 @@ module.exports.projectsDeleteOne = function(req, res) {
     );
   } else {
     sendJSONresponse(res, 404, {
-      // "message": "No projectid"
+      "message": "No projectid"
     });
   }
 };
