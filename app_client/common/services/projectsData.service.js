@@ -15,9 +15,21 @@
       return $http.delete('/api/projects/' + projectId);
     };
 
+    var deselectAllProjects = function() {
+      return $http.put('/api/projects/deselectAllProjects');
+    };
+
+
+    var setActiveProject = function(projectId) {
+      return $http.put('/api/projects/setActiveProject/:projectid');
+    };
+
+
     return {
       readAllProjects: readAllProjects,
-      deleteProject: deleteProject
+      deleteProject: deleteProject,
+      deselectAllProjects: deselectAllProjects,
+      setActiveProject: setActiveProject
     };
 
     // var locationByCoords = function (lat, lng) {

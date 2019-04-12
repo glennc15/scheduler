@@ -99,7 +99,7 @@ module.exports.projectSetActiveProject = function(req, res) {
 
 // PUT: /projects/deselectAllProject/:projectid
 /* set the active project */
-module.exports.deselectAllProject = function(req, res) {
+module.exports.deselectAllProjects = function(req, res) {
   Project
     .updateMany({}, {projectSelected: false})
     .exec(
