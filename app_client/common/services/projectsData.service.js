@@ -19,11 +19,9 @@
       return $http.put('/api/projects/deselectAllProjects');
     };
 
-
     var setActiveProject = function(projectId) {
-      return $http.put('/api/projects/setActiveProject/:projectid');
+      return $http.put('/api/projects/setActiveProject/' + projectId);
     };
-
 
     return {
       readAllProjects: readAllProjects,

@@ -64,6 +64,7 @@ module.exports.projectsCreate = function(req, res) {
 /* PUT /projects/setActiveProject/:projectid */
 /* set the active project */
 module.exports.projectSetActiveProject = function(req, res) {
+  req.params.projectid
   if (!req.params.projectid) {
     sendJSONresponse(res, 404, {
       "message": "Not found, projectid is required"
@@ -71,9 +72,18 @@ module.exports.projectSetActiveProject = function(req, res) {
     return;
   }
 
+  seachData = {
+    _id: req.params.projectid
+  };
+
+  updateData = {
+    projectSelected: true
+  };
+
   Project
-    .findOne({rcmProjectId: req.params.projectid})
-    .exec(
+    .findOneAndUpdate(
+      seachData,
+      updateData,
       function(err, project) {
         if (!project) {
           sendJSONresponse(res, 404, {
@@ -84,17 +94,7 @@ module.exports.projectSetActiveProject = function(req, res) {
           sendJSONresponse(res, 400, err);
           return;
         }
-
-        project.projectSelected = true;
-        project.save(function(err, project) {
-          if (err) {
-            sendJSONresponse(res, 404, err);
-          } else {
-            sendJSONresponse(res, 200, project);
-          }
-        });
-      }
-  );
+    });
 };
 
 // PUT: /projects/deselectAllProject/:projectid

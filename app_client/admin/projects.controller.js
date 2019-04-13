@@ -37,7 +37,7 @@
     // }];
 
 
-    vm.delete_project = function(projectId) {
+    vm.deleteProject = function(projectId) {
 
       // alert("delete_project(" + project_id + ") has been pressed!");
       projectsData.deleteProject(projectId)
@@ -51,9 +51,38 @@
 
     };
 
-    vm.get_projects = function () {
-      alert("Getting Projects from RCM");
-    }
+    vm.setActiveProject = function(currentValue, projectId) {
+
+      var setActiveProject = function(projectid) {
+        projectsData.setActiveProject(projectId)
+          .success(function(statusCode) {
+            console.log("projectsData.setActiveProject() statusCode:");
+            console.log(statusCode);
+            // getProjectData();
+          })
+          .error(function(e) {
+            console.log(e);
+          });
+
+
+      };
+
+
+      if (currentValue == 'true') {
+        projectsData.deselectAllProjects()
+          .success(function(statusCode){
+            console.log("projectsData.deselectAllProjects() statusCode:");
+            console.log(statusCode);
+
+            setActiveProject(projectId);
+            
+          })
+          .error(function(e) {
+            console.log(e);
+          });
+      }
+
+    };
 
 
 
