@@ -53,6 +53,8 @@
 
     vm.setActiveProject = function(currentValue, projectId) {
 
+      // see https://stackoverflow.com/questions/22539815/arent-promises-just-callbacks
+      
       var setActiveProject = function(projectid) {
         projectsData.setActiveProject(projectId)
           .success(function(statusCode) {
