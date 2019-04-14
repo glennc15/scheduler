@@ -3,16 +3,23 @@
 <div class="container">
   <page-header content="vm.pageHeader"></page-header>
 
-  <div class="row">
+<!--   <div class="row">
     <div class="col-xs-12 col-md-12">
       <p>{{ vm.projects }}</p>
     </div>
-  </div>
-  
+  </div> -->
+
   <!-- start: Projects table -->
   <div class="row">
     <div class="col-xs-12 col-md-12">
       <table class="table">
+<!--         <thead>
+          <tr>
+            <th>Project</th>
+            <th class="pull-right">Active</th>
+            <th class="pull-right">Remove Project</th>
+          </tr>
+        </thead> -->
         <tbody>
           <tr ng-repeat="project in vm.projects">
             <td>
@@ -20,12 +27,12 @@
             </td>
             
             <td>
-              <input type="checkbox" ng-model="check" ng-change="vm.setActiveProject(check, project._id)" ng-true-value="true" ng-false-value="false" ng-checked="project.projectSelected"/>
+              <input type="checkbox" class="pull-right" ng-model="check" ng-change="vm.setActiveProject(check, project._id)" ng-true-value="true" ng-false-value="false" ng-checked="project.projectSelected"/>
             </td>
-
+<!-- 
             <td>
               {{ project.projectSelected }}
-            </td>
+            </td> -->
 
             <td>
               <a ng-click="vm.deleteProject(project._id)" class="btn btn-danger pull-right">Delete</a>

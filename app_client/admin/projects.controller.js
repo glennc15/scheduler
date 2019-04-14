@@ -57,15 +57,29 @@
       
       if (currentValue == 'true') {
         projectsData.deselectAllProjects().then(function(deselectResults) {
-          console.log("deselectResults:" + deselectResults);
+          // console.log("deselectResults:" + deselectResults.status);
           return projectsData.setActiveProject(projectId);
         })
         .then(function(setActiveProjectResults) {
-          console.log("setActiveProjectResults: " + setActiveProjectResults);
+          // console.log("setActiveProjectResults: " + setActiveProjectResults.status);
           return projectsData.readAllProjects();
         })
         .then(function(readAllProjectsResults) {
-          console.log("readAllProjectsResults: " + readAllProjectsResults);
+          // console.log("readAllProjectsResults: " + readAllProjectsResults.status);
+          vm.projects = readAllProjectsResults.data;
+        })
+        .catch(function(error) {
+          console.log("error: " + error);
+        });
+
+      } else {
+        
+        projectsData.deselectAllProjects().then(function(deselectResults) {
+          // console.log("deselectResults:" + deselectResults.status);
+          return projectsData.readAllProjects();
+        })
+        .then(function(readAllProjectsResults) {
+          // console.log("readAllProjectsResults: " + readAllProjectsResults.status);
           vm.projects = readAllProjectsResults.data;
         })
         .catch(function(error) {
@@ -73,6 +87,7 @@
         });
 
       }
+
     };
 
   };
