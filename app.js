@@ -22,7 +22,7 @@ var appClientFiles = [
   'app_client/app.js',
   'app_client/home/home.controller.js',
   'app_client/about/about.controller.js',
-  'app_client/admin/projects.controller.js',
+  'app_client/admin/projects/projects.controller.js',
   'app_client/locationDetail/locationDetail.controller.js',
   'app_client/reviewModal/reviewModal.controller.js',
   'app_client/common/services/geolocation.service.js',

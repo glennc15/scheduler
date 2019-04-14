@@ -20,7 +20,7 @@
         controllerAs: 'vm'
       })
       .when('/admin', {
-        templateUrl: '/admin/projects.view.html',
+        templateUrl: '/admin/projects/projects.view.html',
         controller: 'projectsCtrl',
         controllerAs: 'vm'
       })
