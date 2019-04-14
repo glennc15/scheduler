@@ -64,7 +64,7 @@ module.exports.projectsCreate = function(req, res) {
 /* PUT /projects/setActiveProject/:projectid */
 /* set the active project */
 module.exports.projectSetActiveProject = function(req, res) {
-  req.params.projectid
+  // req.params.projectid
   if (!req.params.projectid) {
     sendJSONresponse(res, 404, {
       "message": "Not found, projectid is required"
@@ -72,7 +72,7 @@ module.exports.projectSetActiveProject = function(req, res) {
     return;
   }
 
-  seachData = {
+  searchData = {
     _id: req.params.projectid
   };
 
@@ -80,9 +80,14 @@ module.exports.projectSetActiveProject = function(req, res) {
     projectSelected: true
   };
 
+  // console.log(searchData);
+  // console.log(updateData);
+
+  // sendJSONresponse(res, 200, searchData);
+
   Project
     .findOneAndUpdate(
-      seachData,
+      searchData,
       updateData,
       function(err, project) {
         if (!project) {
@@ -93,6 +98,9 @@ module.exports.projectSetActiveProject = function(req, res) {
         } else if (err) {
           sendJSONresponse(res, 400, err);
           return;
+        } else {
+          // console.log(project);
+          sendJSONresponse(res, 200, project);
         }
     });
 };

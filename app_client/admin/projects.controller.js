@@ -55,72 +55,39 @@
 
       // see https://stackoverflow.com/questions/22539815/arent-promises-just-callbacks
       
-      var setActiveProject = function(projectid) {
-        projectsData.setActiveProject(projectId)
-          .success(function(statusCode) {
-            console.log("projectsData.setActiveProject() statusCode:");
-            console.log(statusCode);
-            // getProjectData();
-          })
-          .error(function(e) {
-            console.log(e);
-          });
-
-
-      };
-
-
       if (currentValue == 'true') {
-        projectsData.deselectAllProjects()
-          .success(function(statusCode){
-            console.log("projectsData.deselectAllProjects() statusCode:");
-            console.log(statusCode);
+        projectsData.deselectAllProjects().then(function(deselectResults) {
+          console.log("deselectResults:" + deselectResults);
+          return projectsData.setActiveProject(projectId);
+        })
+        .then(function(setActiveProjectResults) {
+          console.log("setActiveProjectResults: " + setActiveProjectResults);
+          return projectsData.readAllProjects();
+        })
+        .then(function(readAllProjectsResults) {
+          console.log("readAllProjectsResults: " + readAllProjectsResults);
+          vm.projects = readAllProjectsResults.data;
+        })
+        .catch(function(error) {
+          console.log("error: " + error);
+        });
 
-            setActiveProject(projectId);
-            
-          })
-          .error(function(e) {
-            console.log(e);
-          });
       }
-
     };
 
+  };
 
 
-    
-    // vm.locationid = $routeParams.locationid;
+        // api().then(function(result){
+        //     return api2();
+        // }).then(function(result2){
+        //     return api3();
+        // }).then(function(result3){
+        //      // do work
+        // }).catch(function(error) {
+        //      //handle any error that may occur before this point
 
-    // loc8rData.locationById(vm.locationid)
-    //   .success(function(data) {
-    //     vm.data = { location: data };
-    //     vm.pageHeader = {
-    //       title: vm.data.location.name
-    //     };
-    //   })
-    //   .error(function (e) {
-    //     console.log(e);
-    //   });
 
-    // vm.popupReviewForm = function () {
-    //   var modalInstance = $modal.open({
-    //     templateUrl: '/reviewModal/reviewModal.view.html',
-    //     controller: 'reviewModalCtrl as vm',
-    //     resolve : {
-    //       locationData : function () {
-    //         return {
-    //           locationid : vm.locationid,
-    //           locationName : vm.data.location.name
-    //         };
-    //       }
-    //     }
-    //   });
-
-    //   modalInstance.result.then(function (data) {
-    //     vm.data.location.reviews.push(data);
-    //   });
-    // };
-
-  }
+   
 
 })();
